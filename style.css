@@ -1,0 +1,73 @@
+/* CSS Document */
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#wrapper {
+	width: 480px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#tabs-wrapper, #blocks-wrapper {
+	width: 100%;
+}
+
+ul#tabs {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #CCC;
+}
+
+ul#tabs li {
+	width: 50%;
+	float: left;
+	margin: 0 0 -1px 0;
+	padding: 10px 2px;
+	text-align: center;
+	/*background: #F9F9F9;*/
+	border-radius: 5px 5px 0 0;
+	cursor: pointer;
+}
+
+ul#tabs li:hover {
+	background: #CCC;
+}
+
+ul#tabs li:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+ul#tabs li:last-of-type:after {
+	clear: both;
+}
+
+#tabs-wrapper .active {
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	background: white;
+}
+
+.blocks {
+	width: 100%;
+	height: 200px;
+	display: none;
+}
+
+#blocks-wrapper .active {
+	display: block;
+}
